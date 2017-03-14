@@ -1,6 +1,5 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
-import { specs, describe, it } from 'storybook-addon-specifications'
+import { storiesOf, action, specs, describe, it } from './../../../.storybook/facade';
 import expect from 'expect';
 import { mount, shallow, render } from 'enzyme'
 import { component as Main } from '../Main';

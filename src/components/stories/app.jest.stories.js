@@ -1,7 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { storiesOf } from '@kadira/storybook';
-import { specs, describe, it, beforeEach } from 'storybook-addon-specifications'
+import { storiesOf, specs, describe, it, beforeEach } from './../../../.storybook/facade';
 import expect from 'expect';
 import { mount, shallow, render } from 'enzyme'
 import App from '../index';
