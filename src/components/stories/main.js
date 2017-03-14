@@ -20,7 +20,7 @@ const completeItem = todo => ({
 });
 
 const todoListFactory = items =>
-	() => <Main items={items} toggleItems={items.map(() => action('toggleItem'))}/>;
+	() => <Main items={items} toggleItems={action('toggleItems')}/>;
 
 storiesOf('Main', module)
 	.addDecorator(story =>
