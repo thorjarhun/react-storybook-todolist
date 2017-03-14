@@ -1,0 +1,53 @@
+exports[`completed`] = `
+<div
+  className="todoapp">
+  <div
+    className="todo-list">
+    <li
+      className="completed">
+      <div
+        className="view">
+        <input
+          checked={true}
+          className="toggle"
+          onChange={[Function]}
+          type="checkbox" />
+        <label
+          onDoubleClick={[Function]}>
+          Sample Item
+        </label>
+        <button
+          className="destroy"
+          onClick={undefined} />
+      </div>
+    </li>
+  </div>
+</div>
+`;
+
+exports[`not completed`] = `
+<div
+  className="todoapp">
+  <div
+    className="todo-list">
+    <li
+      className="">
+      <div
+        className="view">
+        <input
+          checked={false}
+          className="toggle"
+          onChange={[Function]}
+          type="checkbox" />
+        <label
+          onDoubleClick={[Function]}>
+          Sample Item
+        </label>
+        <button
+          className="destroy"
+          onClick={undefined} />
+      </div>
+    </li>
+  </div>
+</div>
+`;

@@ -28,6 +28,10 @@ storiesOf('Item', module)
 	.add('not completed', () => {
 		const story = itemFactory(sampleItem);
 		specs(() => describe('not completed', () => {
+			it('should not have className completed', () => {
+				const wrapper = mount(story);
+				expect(wrapper.find('li').hasClass('completed')).toBe(false);
+			});
 			it('onDoubleClick on label should put component in editing state', () => {
 				const wrapper = mount(story);
 				const input = wrapper.find('label');
@@ -36,7 +40,6 @@ storiesOf('Item', module)
 				input.simulate('doubleClick');
 				expect(output.hasClass('editing')).toBe(true);
 			});
-			it('')
 		}));
 		return story;
 	})
@@ -45,15 +48,11 @@ storiesOf('Item', module)
 			...sampleItem,
 			completed: true
 		});
+		specs(() => describe('completed', () => {
+			it('should have className completed', () => {
+				const wrapper = mount(story);
+				expect(wrapper.find('li').hasClass('completed')).toBe(true);
+			});
+		}));
 		return story;
 	});
-	/*
-	.add('editing', () =>
-		<Item item={sampleItem}
-		      editing={true}
-		      enableEditing={action('enableEditing')}
-		      edit={action('editItem')}
-		      remove={action('clearItem')}
-		      toggle={action('toggleItem')}/>
-	);
-*/

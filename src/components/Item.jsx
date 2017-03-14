@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import { ENTER_KEY, ESCAPE_KEY } from '../constants';
 
 export default React.createClass({
 	getInitialState() {
@@ -7,27 +8,22 @@ export default React.createClass({
 			editing: false
 		};
 	},
-	handleDoubleClick() {
-		this.setState({ editing: true })
+	onDoubleClick() {
+		this.setState({ editing: true });
 	},
-	handleSave(text) {
-		this.setState({ editing: false });
-		if (text.length) {
-			this.props.editItem(this.props.item.id, text);
-		} else {
-			this.props.removeItem(this.props.item.id);
+	onKeyDown(e) {
+		if (e.which === ENTER_KEY) {
+			this.props.editItem(e.target.value.trim());
+			this.setState({ editing: false });
+		} else if (e.which === ESCAPE_KEY) {
+			e.target.blur();
 		}
 	},
-	handleSubmit(e) {
-		if (e.which === 13) {
-			this.handleSave(e.target.value.trim());
-		}
-	},
-	handleBlur(e) {
-		this.handleSave(e.target.value.trim());
+	onBlur() {
+		this.setState({editing: false});
 	},
 	render() {
-		const { item, toggleItem, removeItem } = this.props;
+		const { item, toggleItem, clearItem } = this.props;
 		const { editing } = this.state;
 		return (
 			<li className={classnames({
@@ -38,16 +34,20 @@ export default React.createClass({
 					<input className="toggle"
 					       type="checkbox"
 					       checked={item.completed}
-					       onChange={() => toggleItem(item.id)} />
-					<label onDoubleClick={this.handleDoubleClick}>
+					       onChange={toggleItem} />
+					<label onDoubleClick={this.onDoubleClick}>
 						{item.text}
 					</label>
-					<button className="destroy" onClick={() => removeItem(item.id)} />
+					<button className="destroy" onClick={clearItem} />
 				</div>
-				<input className='edit'
-				       defaultValue={item.text}
-				       onBlur={this.handleBlur}
-				       onKeyDown={this.handleSubmit} />
+				{
+					editing &&
+					<input className='edit'
+					       defaultValue={item.text}
+					       onBlur={this.onBlur}
+					       onKeyDown={this.onKeyDown}
+					       autoFocus/>
+				}
 			</li>
 		);
 	}

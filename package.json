@@ -6,7 +6,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test-storybook": "storyshots"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "@kadira/storyshots": "^2.1.0",
     "enzyme": "^2.7.1",
     "expect": "^1.20.2",
     "react-addons-test-utils": "^15.4.2",

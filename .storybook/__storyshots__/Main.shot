@@ -1,0 +1,212 @@
+exports[`all completed`] = `
+<div
+  className="todoapp">
+  <section
+    className="main">
+    <input
+      checked={true}
+      className="toggle-all"
+      onChange={[Function]}
+      type="checkbox" />
+    <ul
+      className="todo-list">
+      <li
+        className="completed">
+        <div
+          className="view">
+          <input
+            checked={true}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item One
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="completed">
+        <div
+          className="view">
+          <input
+            checked={true}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Two
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="completed">
+        <div
+          className="view">
+          <input
+            checked={true}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Three
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+`;
+
+exports[`none complete`] = `
+<div
+  className="todoapp">
+  <section
+    className="main">
+    <input
+      checked={false}
+      className="toggle-all"
+      onChange={[Function]}
+      type="checkbox" />
+    <ul
+      className="todo-list">
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item One
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Two
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Three
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+`;
+
+exports[`some completed`] = `
+<div
+  className="todoapp">
+  <section
+    className="main">
+    <input
+      checked={false}
+      className="toggle-all"
+      onChange={[Function]}
+      type="checkbox" />
+    <ul
+      className="todo-list">
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item One
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Two
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="completed">
+        <div
+          className="view">
+          <input
+            checked={true}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Three
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+`;
