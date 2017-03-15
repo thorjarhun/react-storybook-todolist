@@ -21,7 +21,7 @@ export default React.createClass({
 			}
 			this.setState({ editing: false });
 		} else if (e.which === ESCAPE_KEY) {
-			e.target.blur();
+			this.setState({editing: false});
 		}
 	},
 	onBlur() {
