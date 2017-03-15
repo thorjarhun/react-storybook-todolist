@@ -11,7 +11,7 @@ export const editItem = (id, text) => ({
 	text
 });
 
-export const toggleItem = (id) => ({
+export const toggleItem = id => ({
 	type: ACTIONS.TOGGLE_ITEM,
 	id
 });

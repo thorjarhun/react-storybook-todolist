@@ -13,7 +13,12 @@ export default React.createClass({
 	},
 	onKeyDown(e) {
 		if (e.which === ENTER_KEY) {
-			this.props.editItem(e.target.value.trim());
+			const text = e.target.value.trim();
+			if (text) {
+				this.props.editItem(e.target.value.trim());
+			} else {
+				this.props.clearItem();
+			}
 			this.setState({ editing: false });
 		} else if (e.which === ESCAPE_KEY) {
 			e.target.blur();

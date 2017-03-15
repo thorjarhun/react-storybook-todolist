@@ -17,8 +17,8 @@ const items = content.map((text, id) => ({
 	completed: false
 }));
 
-const completeItem = todo => ({
-	...todo,
+const completeItem = item => ({
+	...item,
 	completed: true
 });
 

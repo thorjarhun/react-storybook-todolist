@@ -24,9 +24,12 @@
     "@kadira/storyshots": "^2.1.0",
     "enzyme": "^2.7.1",
     "expect": "^1.20.2",
+    "jasmine-check": "^0.1.5",
+    "ramda": "^0.23.0",
     "react-addons-test-utils": "^15.4.2",
     "react-scripts": "^0.9.5",
     "react-shallow-testutils": "^2.0.0",
-    "storybook-addon-specifications": "^1.0.16"
+    "storybook-addon-specifications": "^1.0.16",
+    "testcheck": "^0.1.4"
   }
 }

@@ -13,12 +13,10 @@ export default (state = [], action) => {
 		case CLEAR_ITEM:
 			return state.filter(item => item.id !== action.id);
 		case EDIT_ITEM:
-			return !action.text
-				? state.filter(item => item.id !== action.id)
-				: replaceAtId(state, action.id, item => ({
-						...item,
-						text: action.text
-					}));
+			return replaceAtId(state, action.id, item => ({
+				...item,
+				text: action.text
+			}));
 		case TOGGLE_ITEM:
 			return replaceAtId(state, action.id, item => ({
 				...item,
