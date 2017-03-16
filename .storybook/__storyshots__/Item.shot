@@ -18,7 +18,7 @@ exports[`completed`] = `
         </label>
         <button
           className="destroy"
-          onClick={undefined} />
+          onClick={[Function]} />
       </div>
     </li>
   </div>
@@ -45,7 +45,7 @@ exports[`not completed`] = `
         </label>
         <button
           className="destroy"
-          onClick={undefined} />
+          onClick={[Function]} />
       </div>
     </li>
   </div>

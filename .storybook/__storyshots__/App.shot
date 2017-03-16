@@ -1,0 +1,486 @@
+exports[`all completed`] = `
+<section
+  className="todoapp">
+  <header
+    className="header">
+    <h1>
+      todos
+    </h1>
+    <input
+      autoFocus="true"
+      className="new-todo"
+      onKeyDown={[Function]}
+      placeholder="What needs to be done?" />
+  </header>
+  <section
+    className="main">
+    <input
+      checked={true}
+      className="toggle-all"
+      onChange={[Function]}
+      type="checkbox" />
+    <ul
+      className="todo-list">
+      <li
+        className="completed">
+        <div
+          className="view">
+          <input
+            checked={true}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item One
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="completed">
+        <div
+          className="view">
+          <input
+            checked={true}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Two
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="completed">
+        <div
+          className="view">
+          <input
+            checked={true}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Three
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+    </ul>
+  </section>
+  <footer
+    className="footer">
+    <span
+      className="todo-count">
+      <strong>
+        No
+      </strong>
+       
+      items
+       left
+    </span>
+    <ul
+      className="filters">
+      <li>
+        <a
+          className="selected"
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          All
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          Active
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          Completed
+        </a>
+      </li>
+    </ul>
+    <button
+      className="clear-completed"
+      onClick={[Function]}>
+      Clear completed
+    </button>
+  </footer>
+</section>
+`;
+
+exports[`initial state`] = `
+<section
+  className="todoapp">
+  <header
+    className="header">
+    <h1>
+      todos
+    </h1>
+    <input
+      autoFocus="true"
+      className="new-todo"
+      onKeyDown={[Function]}
+      placeholder="What needs to be done?" />
+  </header>
+  <section
+    className="main">
+    <input
+      checked={false}
+      className="toggle-all"
+      onChange={[Function]}
+      type="checkbox" />
+    <ul
+      className="todo-list" />
+  </section>
+  <footer
+    className="footer">
+    <span
+      className="todo-count">
+      <strong>
+        No
+      </strong>
+       
+      items
+       left
+    </span>
+    <ul
+      className="filters">
+      <li>
+        <a
+          className="selected"
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          All
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          Active
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          Completed
+        </a>
+      </li>
+    </ul>
+  </footer>
+</section>
+`;
+
+exports[`none completed`] = `
+<section
+  className="todoapp">
+  <header
+    className="header">
+    <h1>
+      todos
+    </h1>
+    <input
+      autoFocus="true"
+      className="new-todo"
+      onKeyDown={[Function]}
+      placeholder="What needs to be done?" />
+  </header>
+  <section
+    className="main">
+    <input
+      checked={false}
+      className="toggle-all"
+      onChange={[Function]}
+      type="checkbox" />
+    <ul
+      className="todo-list">
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item One
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Two
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Three
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+    </ul>
+  </section>
+  <footer
+    className="footer">
+    <span
+      className="todo-count">
+      <strong>
+        3
+      </strong>
+       
+      items
+       left
+    </span>
+    <ul
+      className="filters">
+      <li>
+        <a
+          className="selected"
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          All
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          Active
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          Completed
+        </a>
+      </li>
+    </ul>
+  </footer>
+</section>
+`;
+
+exports[`some completed`] = `
+<section
+  className="todoapp">
+  <header
+    className="header">
+    <h1>
+      todos
+    </h1>
+    <input
+      autoFocus="true"
+      className="new-todo"
+      onKeyDown={[Function]}
+      placeholder="What needs to be done?" />
+  </header>
+  <section
+    className="main">
+    <input
+      checked={false}
+      className="toggle-all"
+      onChange={[Function]}
+      type="checkbox" />
+    <ul
+      className="todo-list">
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item One
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="">
+        <div
+          className="view">
+          <input
+            checked={false}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Two
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+      <li
+        className="completed">
+        <div
+          className="view">
+          <input
+            checked={true}
+            className="toggle"
+            onChange={[Function]}
+            type="checkbox" />
+          <label
+            onDoubleClick={[Function]}>
+            Item Three
+          </label>
+          <button
+            className="destroy"
+            onClick={[Function]} />
+        </div>
+      </li>
+    </ul>
+  </section>
+  <footer
+    className="footer">
+    <span
+      className="todo-count">
+      <strong>
+        2
+      </strong>
+       
+      items
+       left
+    </span>
+    <ul
+      className="filters">
+      <li>
+        <a
+          className="selected"
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          All
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          Active
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }>
+          Completed
+        </a>
+      </li>
+    </ul>
+    <button
+      className="clear-completed"
+      onClick={[Function]}>
+      Clear completed
+    </button>
+  </footer>
+</section>
+`;

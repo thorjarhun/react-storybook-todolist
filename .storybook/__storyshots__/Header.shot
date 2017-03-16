@@ -1,0 +1,19 @@
+exports[`default view`] = `
+<div
+  className="todoapp">
+  <div
+    className="todo-list">
+    <header
+      className="header">
+      <h1>
+        todos
+      </h1>
+      <input
+        autoFocus="true"
+        className="new-todo"
+        onKeyDown={[Function]}
+        placeholder="What needs to be done?" />
+    </header>
+  </div>
+</div>
+`;

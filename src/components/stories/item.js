@@ -88,7 +88,7 @@ storiesOf('Item', module)
 				expect(output.hasClass('editing')).toBe(false);
 				expect(clearItem).toHaveBeenCalled();
 			});
-			it('pressing enter when edited text is something and not whitespace should call editItem', () => {
+			it('pressing enter when edited text is non-whitespace string should call editItem', () => {
 				const wrapper = mount(story);
 				const editItem = expect.createSpy();
 				wrapper.setProps({editItem});
