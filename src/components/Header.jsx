@@ -1,9 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { addItem } from '../actions';
 import { ENTER_KEY } from '../constants';
 
-export const component = ({addItem}) =>
+const Header = ({addItem}) =>
 	<header className='header'>
 		<h1>todos</h1>
 		<input className='new-todo'
@@ -18,7 +16,4 @@ export const component = ({addItem}) =>
 		       }} />
 	</header>;
 
-export default connect(
-	null,
-	dispatch => ({ addItem: text => dispatch(addItem(text))})
-)(component);
+export default Header;

@@ -1,35 +1,16 @@
 import { ACTIONS } from '../constants'
 
-export const addItem = text => ({
-	type: ACTIONS.ADD_ITEM,
-	text
-});
+// Electing on unceremonious approach.
+// Alternatively, could put some business logic here, e.g.
+// - editItem could return CLEAR_ITEM if text.trim() is empty
 
-export const editItem = (id, text) => ({
-	type: ACTIONS.EDIT_ITEM,
-	id,
-	text
-});
+const createActionCreator = (type, ...argNames) => (...args) =>
+	argNames.reduce((a,_,i) => ({ ...a, [argNames[i]]: args[i] }), { type });
 
-export const toggleItem = id => ({
-	type: ACTIONS.TOGGLE_ITEM,
-	id
-});
-
-export const toggleAll = () => ({
-	type: ACTIONS.TOGGLE_ALL
-});
-
-export const clearItem = id => ({
-	type: ACTIONS.CLEAR_ITEM,
-	id
-});
-
-export const clearCompleted = () => ({
-	type: ACTIONS.CLEAR_COMPLETED
-});
-
-export const setFilter = filter => ({
-	type: ACTIONS.SET_FILTER,
-	filter
-});
+export const addItem = createActionCreator(ACTIONS.ADD_ITEM, 'text');
+export const editItem = createActionCreator(ACTIONS.EDIT_ITEM, 'id', 'text');
+export const clearItem = createActionCreator(ACTIONS.CLEAR_ITEM, 'id');
+export const toggleItem = createActionCreator(ACTIONS.TOGGLE_ITEM, 'id');
+export const toggleAll = createActionCreator(ACTIONS.TOGGLE_ALL);
+export const clearCompleted = createActionCreator(ACTIONS.CLEAR_COMPLETED);
+export const setFilter = createActionCreator(ACTIONS.SET_FILTER, 'filter');

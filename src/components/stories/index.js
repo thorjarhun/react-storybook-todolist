@@ -1,4 +1,4 @@
-import './main';
+import './body';
 import './item';
 import './app';
 

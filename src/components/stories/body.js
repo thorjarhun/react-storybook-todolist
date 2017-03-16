@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 import { specs, describe, it } from 'storybook-addon-specifications'
 import expect from 'expect';
-import { mount, shallow, render } from 'enzyme'
-import { component as Main } from '../Main';
+import { mount, shallow } from 'enzyme'
+import Body from '../Body';
 
 const content = [
 	'Item One',
@@ -23,16 +23,16 @@ const completeItem = item => ({
 });
 
 const itemListFactory = items =>
-	<Main items={items}
-			  toggleAll={action('toggleAll')}
-			  itemActions={() => ({
+	<Body items={items}
+	      toggleAll={action('toggleAll')}
+	      itemActions={() => ({
 			    toggleItem: action('toggleItem'),
 			    editItem: action('editItem'),
 			    clearItem: action('clearItem')
 			  })}
 	/>;
 
-storiesOf('Main', module)
+storiesOf('Body', module)
 	.addDecorator(story =>
 		<div className="todoapp">
 			{story()}

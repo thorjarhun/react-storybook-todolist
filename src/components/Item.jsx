@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import classnames from 'classnames';
 import { ENTER_KEY, ESCAPE_KEY } from '../constants';
 
-export default React.createClass({
+const Item = React.createClass({
 	getInitialState() {
 		return {
 			editing: false
@@ -57,3 +57,12 @@ export default React.createClass({
 		);
 	}
 });
+
+Item.propTypes = {
+	item: PropTypes.object.isRequired,
+	editItem: PropTypes.func.isRequired,
+	clearItem: PropTypes.func.isRequired,
+	toggleItem: PropTypes.func.isRequired
+};
+
+export default Item;
