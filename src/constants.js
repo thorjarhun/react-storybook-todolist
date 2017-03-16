@@ -16,13 +16,13 @@ export const ACTIONS = {
 };
 
 export const SHOW_ALL = 'SHOW_ALL';
-export const SHOW_COMPLETED = 'SHOW_COMPLETED';
 export const SHOW_ACTIVE = 'SHOW_ACTIVE';
+export const SHOW_COMPLETED = 'SHOW_COMPLETED';
 
 export const FILTERS = {
 	SHOW_ALL,
-	SHOW_COMPLETED,
-	SHOW_ACTIVE
+	SHOW_ACTIVE,
+	SHOW_COMPLETED
 };
 
 export const FILTER_TITLES = {
@@ -39,4 +39,3 @@ export const FILTER_PREDICATES = {
 
 export const ENTER_KEY = 13;
 export const ESCAPE_KEY = 27;
-export const BACKSPACE_KEY = 8;

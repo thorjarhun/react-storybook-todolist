@@ -42,7 +42,7 @@ storiesOf('Body', module)
 		const story = itemListFactory(items);
 		specs(() => describe('none completed', () => {
 			it('should display three items', () => {
-				expect(shallow(story).find('Item').length).toBe(3);
+				expect(mount(story).find('Item').length).toBe(3);
 			});
 			it('should indicate that all are not complete', () => {
 				expect(mount(story).find('li.completed').length).toBe(0);
@@ -59,7 +59,7 @@ storiesOf('Body', module)
 				items.slice(2).map(completeItem)));
 		specs(() => describe('some completed', () => {
 			it('should display three items', () => {
-				expect(shallow(story).find('Item').length).toBe(3);
+				expect(mount(story).find('Item').length).toBe(3);
 			});
 			it('should indicate that one is complete', () => {
 				expect(mount(story).find('li.completed').length).toBe(1);
@@ -74,7 +74,7 @@ storiesOf('Body', module)
 		const story = itemListFactory(items.map(completeItem));
 		specs(() => describe('all completed', () => {
 			it('should display three items', () => {
-				expect(shallow(story).find('Item').length).toBe(3);
+				expect(mount(story).find('Item').length).toBe(3);
 			});
 			it('should indicate that all are complete', () => {
 				expect(mount(story).find('li.completed').length).toBe(3);
