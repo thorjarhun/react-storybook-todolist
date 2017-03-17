@@ -19,7 +19,7 @@ storiesOf('Header', module)
   .add('default view', () => {
     const story = header;
     specs(() => describe('default view', () => {
-      it('pressing enter when edited text is blank should no nothing', () => {
+      it('pressing enter when edited text is blank should do nothing', () => {
         const wrapper = mount(story);
         const addItem = expect.createSpy();
         wrapper.setProps({addItem});
