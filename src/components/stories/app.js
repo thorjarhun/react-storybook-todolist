@@ -82,7 +82,7 @@ storiesOf('App', module)
       it('should display three items', () => {
         expect(mount(story).find('Item').length).toBe(3);
       });
-      it('should indicate that one is complete', () => {
+      it('should indicate that none are complete', () => {
         expect(mount(story).find('li.completed').length).toBe(0);
       });
       it('should have toggleAll button unchecked', () => {
