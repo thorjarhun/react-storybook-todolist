@@ -5,7 +5,7 @@ import { ACTIONS } from '../constants'
 // - editItem could return CLEAR_ITEM if text.trim() is empty
 
 const createActionCreator = (type, ...argNames) => (...args) =>
-	argNames.reduce((a,_,i) => ({ ...a, [argNames[i]]: args[i] }), { type });
+  argNames.reduce((a,_,i) => ({ ...a, [argNames[i]]: args[i] }), { type });
 
 export const addItem = createActionCreator(ACTIONS.ADD_ITEM, 'text');
 export const editItem = createActionCreator(ACTIONS.EDIT_ITEM, 'id', 'text');

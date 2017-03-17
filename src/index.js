@@ -8,8 +8,8 @@ import 'todomvc-app-css/index.css';
 const store = configureStore();
 
 render(
-	<Provider store={store}>
-		<App />
-	</Provider>,
-	document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
 );
