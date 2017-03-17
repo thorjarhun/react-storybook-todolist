@@ -8,10 +8,12 @@ const Header = ({addItem}) =>
            autoFocus='true'
            placeholder='What needs to be done?'
            onKeyDown={e => {
-              const text = e.target.value.trim();
-              if (text.length && e.which === ENTER_KEY) {
-                addItem(text);
+              if (e.which === ENTER_KEY) {
+                const text = e.target.value.trim();
                 e.target.value = '';
+                if (text) {
+                  addItem(text);
+                }
               }
            }} />
   </header>;

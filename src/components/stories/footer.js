@@ -13,6 +13,7 @@ const footerFactory = (filter, completedExist, remaining) =>
           setFilter={action('setFilter')}
           clearCompleted={action('clearCompleted')}/>;
 
+// TODO: Add tests
 storiesOf('Footer', module)
   .addDecorator(story =>
     <div className="todoapp">
