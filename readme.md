@@ -11,8 +11,6 @@ The original objective of this project was to write a todo list app that utilize
 
 I wasn't sure what flavors of `react` work best with `react-storybook`. I chose to keep most state in `redux` and use mostly stateless components. More detail about this choice can be found [here](src/components/index.jsx).
 
-With every new project, I like to try doing a few small things differently than I have before and explore the pros and cons. This often leads to more questions than answers. One case of that here are the two approaches for nesting components, shown [here](src/components/Body.jsx) and [here](src/components/Footer.jsx). In the former, `<ItemList/>` is broken out into it's own component, whereas in the latter, `TodoCount` is nested through an expression. Personally, I think it would be easier to explore the subtleties by using React without JSX but the API isn't really as nice as it could be. CycleJS has a really nice approach where arguments are ducktyped. Props are always an object and children are always an array. The prevents code from ending up with `null` passed as the first argument for every element that doesn't have any props. Some solutions like `hyperscript-helpers` seem promising but I'm afraid I've already taken this disgression further than I intended.
-
 ## Tests
 Tests are presently divided into two places. Some tests are littered about in files matching *.spec.js. These tests vary a bit in style, as shown in the difference between [these](src/reducers/items.spec.js) and [these](src/reducers/items2.spec.js). Run the tests using
 ```
